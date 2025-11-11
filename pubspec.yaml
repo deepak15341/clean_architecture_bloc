@@ -37,6 +37,7 @@ dependencies:
   flutter_bloc:
   equatable:
   dio:
+  get_it:
 
 
 dev_dependencies:

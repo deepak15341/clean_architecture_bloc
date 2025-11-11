@@ -1,5 +1,6 @@
-import 'package:news/feature/todo/domain/entities/user.dart';
-import 'package:news/feature/todo/domain/repo/user_repository.dart';
+
+import '../entities/user.dart';
+import '../repo/user_repository.dart';
 
 class GetUsers{
   final UserRepository repository;

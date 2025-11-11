@@ -1,6 +1,4 @@
-
-import 'package:news/core/networks/api_services.dart';
-
+import '../../../../core/networks/api_services.dart';
 import '../model/user_model.dart';
 
 abstract class UserRemoteDataSource {
@@ -15,10 +13,9 @@ class UserRemoteDataSourceImpl implements UserRemoteDataSource {
   @override
   Future<List<UserModel>> getUsersFromApi() async {
     var response = await client.getRequest('users');
-
     if (response.isNotEmpty) {
       List<UserModel> model = [];
-      for (var items in response){
+      for (var items in response) {
         model.add(UserModel.fromJson(items));
       }
       return model;

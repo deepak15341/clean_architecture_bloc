@@ -1,6 +1,6 @@
-import 'package:news/feature/todo/domain/repo/user_repository.dart';
 
 import '../../domain/entities/user.dart';
+import '../../domain/repo/user_repository.dart';
 import '../data_sources/user_remote_data_source.dart';
 
 class UserRepositoryImpl implements UserRepository {
